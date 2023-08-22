@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+
+    <!--link to CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--link to javascript-->
+    <script src="js/script.js"></script>
+
+    <!--link for logo for footer section-->
+    <script src="https://kit.fontawesome.com/13da37346a.js" crossorigin="anonymous"></script>
+    
+</head>
+<body class="shoppage">
+
+    <!--The navigation bar is in the header of all pages-->
+    <header>
+        <nav>
+            <a class="logo"href="home.html">CK Creations</a>
+            <ul>
+                <li><a class="navigation" href="home.html">HOME</a></li>
+                <li>
+                    <a class="navigation" href="shop.html">SHOP</a>
+                    <ul>
+                        <li><a class="navigation" href="#crochetshop">Crochet</a></li>
+                        <li><a class="navigation" href="#tshirtshop">T-shirt</a></li>
+                        <li><a class="navigation" href="#othershop">Other</a></li>
+                    </ul>
+                </li>
+                <li><a class="navigation" href="contact.html">CONTACT</a></li>
+                <li><a class="navigation" href="account.html">ACCOUNT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Container for the name and quote-->
+    <p class="titleshop" id="crochetshop">Crochet</p>
+    <div style="position: relative;">
+        <div id="add-to-cart-container" style="position: fixed; top: 110px; right: 0; width: 200px; background-color: #f1f1f1; overflow-y: scroll;">
+            <p style="text-align: center;"><strong>Shopping Cart</strong></p>
+            <div id="cart-container">
+                <!-- Cart items will be displayed here -->
+                <div id="total-price-container">
+                    <span>Total Price:</span>
+                    <span id="total-price">$0.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <section class="shop" style="float: left; margin-right: 220px;">
+
+        <article>
+            <div>
+            <h3>Harry Potter Top</h3>
+            <img src="/images/shop/crochet/1.jpg" alt="Product 1">
+            <p>Size: XS <br>Material: Cotton <br>Color: Red and Yellow <br><strong>$ 4</strong></p>
+            <button onclick="addItemToCart({ id: 1, name: 'Product 1', price: 4 })">Add to Cart</button>
+        </article>
+
+        <article>
+            <h3>Crochet Top</h3>
+            <img src="/images/shop/crochet/2.jpg" alt="Product 2">
+            <p>Size: M <br>Material: Cotton <br>Color: Yellow <br><strong>$ 3</strong></p>
+            <button onclick="addItemToCart({ id: 2, name: 'Product 2', price: 3 })">Add to Cart</button>
+        </article>
+
+        <article>
+            <h3>Bee Top</h3>
+            <img src="/images/shop/crochet/3.jpg" alt="Product 3">
+            <p>Size: S <br>Material: Cotton <br>Color: Yellow and Brown <br><strong>$ 4</strong></p>
+            <button onclick="addItemToCart({ id: 3, name: 'Product 3', price: 4 })">Add to Cart</button>
+        </article>
+
+        <article>
+            <h3>Rose Top</h3>
+            <img src="/images/shop/crochet/4.jpg" alt="Product 1">
+            <p>Size: M <br>Material: Cotton <br>Color: Light Pink <br><strong>$ 3.5</strong> </p>
+            <button onclick="addItemToCart({ id: 4, name: 'Product 4', price: 3.5 })">Add to Cart</button>
+        </article>
+
+        <article>
+            <h3>Bikini Set 1</h3>
+            <img src="/images/shop/crochet/5.jpg" alt="Product 2">
+            <p>Size: S <br>Material: Cotton <br>Color: Red <br><strong>Rs 4</strong> </p>
+            <button onclick="addItemToCart({ id: 5, name: 'Product 5', price: 4 })">Add to Cart</button>
+        </article>
+
+        <article>
+            <h3>Bikini Set 2</h3>
+            <img src="/images/shop/crochet/6.jpg" alt="Product 3">
+            <p>Size: M <br>Material: Cotton <br>Color: White and Red <br><strong>Rs 4</strong> </p>
+            <button onclick="addItemToCart({ id: 6, name: 'Product 6', price: 4 })">Add to Cart</button>
+        </article>
+
+        <article>
+            <h3>Bikini Set 3</h3>
+            <img src="/images/shop/crochet/7.jpg" alt="Product 1">
+            <p>Size: L <br>Material: Cotton <br>Color: White and Green <br><strong>Rs 4</strong></p>
+            <button onclick="addItemToCart({ id: 7, name: 'Product 7', price: 4 })">Add to Cart</button>
+        </article>
+
+        <article>
+            <h3>Bikini Set 4</h3>
+            <img src="/images/shop/crochet/8.jpg" alt="Product 2">
+            <p>Size: XL <br>Material: Cotton <br>Color: White and Yellow <br><strong>Rs 4</strong></p>
+            <button onclick="addItemToCart({ id: 8, name: 'Product 8', price: 4 })">Add to Cart</button>
+        </article>
+
+    </section>
+
+    <p class="titleshop" id="tshirtshop">Tshirt</p>
+    
+    <section class="shop" style="float: left; margin-right: 220px;">
+
+        <article>
+            <h3>Bob Tshirt</h3>
+            <img src="/images/shop/tshirt/1.jpg" alt="Product 1">
+            <p>Size: 8 yrs <br>Material: Cotton <br>Color: White and Yellow <br>Pattern: Crumple <br>Design: Sponge Bob <br><strong>$ 4</strong></p>
+            <button onclick="addItemToCart({ id: 9, name: 'Product 9', price: 4 })">Add to Cart</button>
+        </article>
+
+        <article>
+            <h3>Patrick Tshirt</h3>
+            <img src="/images/shop/tshirt/2.jpg" alt="Product 2">
+            <p>Size: S <br>Material: Cotton <br>Color: White and Coral <br>Pattern: Spiral <br>Design: Patrick <br><strong>$ 4</strong>  </p>
+            <button onclick="addItemToCart({ id: 10, name: 'Product 10', price: 4 })">Add to Cart</button>
+        </article>
+
+        <article>
+            <h3>Winnie Tshirt</h3>
+            <img src="/images/shop/tshirt/3.jpg" alt="Product 3">
+            <p>Size: M <br>Material: Cotton <br>Color: White and Yellow <br>Pattern: Crumple <br>Design: Winnie <br><strong>$ 4</strong> </p>
+            <button onclick="addItemToCart({ id: 11, name: 'Product 11', price: 4 })">Add to Cart</button>
+        </article>
+
+        <article>
+            <h3>Stitch Tshirt</h3>
+            <img src="/images/shop/tshirt/4.jpg" alt="Product 2">
+            <p>Size: XXL <br>Material: Cotton <br>Color: White and Blue <br>Pattern: Crumple <br>Design: Stitch <br><strong>$ 4</strong> </p>
+            <button onclick="addItemToCart({ id: 12, name: 'Product 12', price: 4 })">Add to Cart</button>
+        </article>
+        
+        <article>
+            <h3>Leaf Tshirt</h3>
+            <img src="/images/shop/tshirt/5.jpg" alt="Product 1">
+            <p>Size: L <br>Material: Cotton <br>Color: White and Green <br>Pattern: Crumple <br>Design: Leaf <br><strong>$ 4</strong>  </p>
+            <button onclick="addItemToCart({ id: 13, name: 'Product 13', price: 4 })">Add to Cart</button>
+        </article>
+
+        <article>
+            <h3>Spider Tshirt</h3>
+            <img src="/images/shop/tshirt/6.jpg" alt="Product 2">
+            <p>Size: XL <br>Material: Cotton <br>Color: Blue <br>Pattern: Spiral <br>Design: Spider <br><strong>$ 4</strong> </p>
+            <button onclick="addItemToCart({ id: 14, name: 'Product 14', price: 4 })">Add to Cart</button>
+        </article>
+
+        <article>
+            <h3>Birthday Tshirt</h3>
+            <img src="/images/shop/tshirt/7.jpg" alt="Product 3">
+            <p>Size: S <br>Material: Cotton <br>Color: White and Coral <br>Pattern: Soft <br>Design: Birthday Queen <br><strong>$ 4</strong>  </p>
+            <button onclick="addItemToCart({ id: 15, name: 'Product 15', price: 4 })">Add to Cart</button>
+        </article>
+
+        <article>
+            <h3>Unicorn Tshirt</h3>
+            <img src="/images/shop/tshirt/8.jpg" alt="Product 3">
+            <p>Size: M <br>Material: Cotton <br>Color: White, Coral, Blue, Purple <br>Pattern: Crumple <br>Design: Unicorn <br><strong>$ 4</strong>  </p>
+            <button onclick="addItemToCart({ id: 16, name: 'Product 16', price: 4 })">Add to Cart</button>
+        </article>
+    </section>
+        
+        
+    <p class="titleshop" id="othershop">Other products available</p>
+    <section class="shop" style="float: left; margin-right: 220px;">
+
+        <article>
+            <h3>Baby Boot 1</h3>
+            <img src="/images/shop/other/1.jpg" alt="Product 1">
+            <p>Size: 1-3 month <br>Material: Wool <br>Color: Yellow and Brown <br><strong>$ 1</strong> </p>
+            <button onclick="addItemToCart({ id: 17, name: 'Product 17', price: 1 })">Add to Cart</button>
+        </article>
+
+        <article>
+            <h3>Baby Boot 2</h3>
+            <img src="/images/shop/other/2.jpg" alt="Product 2">
+            <p>Size: 3-4 month <br>Material: Wool <br>Color: Yellow and Brown <br><strong>$ 1</strong> </p>
+            <button onclick="addItemToCart({ id: 18, name: 'Product 18', price: 1 })">Add to Cart</button>
+        </article>
+
+        <article>
+            <h3>Baby Boot 3</h3>
+            <img src="/images/shop/other/3.jpg" alt="Product 3">
+            <p>Size: 3-4 month <br>Material: Wool <br>Color: Blue <br><strong>$ 1</strong> </p>
+            <button onclick="addItemToCart({ id: 19, name: 'Product 19', price: 1 })">Add to Cart</button>
+        </article>
+
+        <article>
+            <h3>Baby Boot 4</h3>
+            <img src="/images/shop/other/4.jpg" alt="Product 1">
+            <p>Size: 3-4 month <br>Material: Wool <br>Color: Pink <br><strong>$ 1</strong> </p>
+            <button onclick="addItemToCart({ id: 17, name: 'Product 17', price: 1 })">Add to Cart</button>
+        </article>
+
+        <article>
+            <h3>Table Runner 1</h3>
+            <img src="/images/shop/other/5.jpg" alt="Product 2">
+            <p>Diameter: 35cm <br>Material: Cotton <br>Color: White <br><strong>Rs 200</strong> </p>
+            <button onclick="addItemToCart({ id: 17, name: 'Product 17', price: 1 })">Add to Cart</button>
+        </article>
+
+        <article>
+            <h3>Table Runner 2</h3>
+            <img src="/images/shop/other/6.jpg" alt="Product 3">
+            <p>Diameter: 35cm <br>Material: Cotton <br>Color: White <br><strong>$ 4</strong> </p>
+            <button onclick="addItemToCart({ id: 17, name: 'Product 17', price: 4 })">Add to Cart</button>
+        </article>
+
+        <article>
+            <h3>Product 7</h3>
+            <img src="/images/shop/other/7.jpg" alt="Product 2">
+            <p>Size: 15cm x 10cm <br>Material: Nylon <br>Color: Light Brown <br><strong>$ 2</strong> </p>
+            <button onclick="addItemToCart({ id: 17, name: 'Product 17', price: 2 })">Add to Cart</button>
+        </article>
+
+        <article>
+            <h3>Baby Set</h3>
+            <img src="/images/shop/other/8.jpg" alt="Product 3">
+            <p id="add-to-cart-container">Size: 4-6 month <br>Material: Wool <br>Color: Light Brown <br><strong>$ 4</strong> </p>
+            <button onclick="addItemToCart({ id: 1, name: 'Product 1', price: 4 })">Add to Cart</button>
+        </article>
+    </section>
+
+
+    <!--The footer of the page that contains logo which is a link to the app it represent -->
+    <footer>
+        <p>Copyright 2023 © | Made with CK Creations.
+            <a href="https://www.facebook.com/ck.creations.mru"> <i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/ck.creations.mru/"><i class="fa-brands fa-square-instagram"></i></a> 
+        </p>
+    </footer>
+
+    <!--link to javascript-->
+    <script src="script.js"></script> 
+</body>
+</html>
