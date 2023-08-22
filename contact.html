@@ -52,7 +52,7 @@
 
             <!--Alert box if empty-->
             <li><label for="Name">Name</label>
-                <input type="text" name="Name" id="Name" placeholder="Name"></li>
+                <input type="text" name="Name" id="Name" required placeholder="Name"></li>
                 
             <li>&nbsp;</li> 
             
@@ -70,12 +70,12 @@
             
             <!--message is optional-->
             <li>Message</li><li>&nbsp;</li> 
-                <li><textarea type="text" rows="5" cols="100" name="Message" id="Message">Write your message/feedback here!</textarea></li>
+                <li><textarea type="text" rows="5" cols="100" required name="Message" id="Message">Write your message/feedback here!</textarea></li>
             
-            <li>&nbsp;</li>     
+            <li>&nbsp;</li>   <!--what's the purpose of this?-->  
             
             <!--button for submission of the contact form-->
-            <button type="submit" name="submit" value="submit">Submit</button>
+            <button type="submit" name="submit" value="submit">Send message</button>
             </ul> 
         </form>
 
