@@ -75,3 +75,6 @@ addToCartButton.addEventListener('click', () => {
   const itemToAdd = { id: 1, name: 'Product 1', price: 10 };
   addItemToCart(itemToAdd);
 });
+
+const year = document.querySelector('#current_year');
+year.innerHTML = new Date().getFullYear();
