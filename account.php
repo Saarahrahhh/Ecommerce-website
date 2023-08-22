@@ -38,7 +38,7 @@
             </ul>
         </nav>
     </header>
-
+//<?php include 'include/header.php'?>
     <section class="signup" id="signup">
         <div class="container">
             <div class="signup-content">
@@ -112,8 +112,9 @@
     </section>
 
     <!--The footer of the page that contains logo which is a link to the app it represent -->
+    <?php include 'include/footer.php'?>
     <footer>
-        <p>Copyright 2023 © | Made with CK Creations.
+        <p>Copyright © <span id="current_year"></span> | Made with CK Creations.
             <a href="https://www.facebook.com/ck.creations.mru"> <i class="fa-brands fa-facebook"></i></a>
             <a href="https://www.instagram.com/ck.creations.mru/"><i class="fa-brands fa-square-instagram"></i></a> 
         </p>
