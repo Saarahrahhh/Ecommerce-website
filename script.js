@@ -1,6 +1,5 @@
 // define an empty cart array to store items
 let cart = [];
-
 // add item to cart
 function addItemToCart(item) {
   // check if item already exists in cart
@@ -15,7 +14,6 @@ function addItemToCart(item) {
   // update the cart display
   displayCart();
 }
-
 // remove item from cart
 function removeItemFromCart(itemId) {
   // find the index of the item in the cart array
@@ -25,7 +23,6 @@ function removeItemFromCart(itemId) {
   // update the cart display
   displayCart();
 }
-
 // update item quantity in cart
 function updateItemQuantity(itemId, quantity) {
   // find the item in the cart array
@@ -35,14 +32,12 @@ function updateItemQuantity(itemId, quantity) {
   // update the cart display
   displayCart();
 }
-
 // calculate total price of items in cart
 function calculateTotalPrice() {
   // reduce the cart array to a total price
   const totalPrice = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
   return totalPrice.toFixed(2); // return total price with 2 decimal places
 }
-
 // display the items in the cart and total price
 function displayCart() {
   const cartContainer = document.getElementById('cart-container');
@@ -68,7 +63,6 @@ function displayCart() {
   const totalPriceContainer = document.getElementById('total-price');
   totalPriceContainer.textContent = `$${calculateTotalPrice()}`;
 }
-
 // add item to cart when "Add to Cart" button is clicked
 const addToCartButton = document.getElementById('add-to-cart');
 addToCartButton.addEventListener('click', () => {
